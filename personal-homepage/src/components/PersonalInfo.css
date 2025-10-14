@@ -8,27 +8,27 @@
 }
 
 .name {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: bold;
   color: #000;
   margin-bottom: 0.5rem;
 }
 
 .role {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: bold;
   color: #000;
   margin-bottom: 0.5rem;
 }
 
 .affiliation {
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: #000;
   margin-bottom: 1rem;
 }
 
 .contact {
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: #000;
 }
 
@@ -38,24 +38,24 @@
   flex-wrap: wrap;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .personal-info {
     padding: 1.5rem;
   }
   
   .name {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
   }
   
   .role {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
   
   .affiliation {
-    font-size: 0.95rem;
+    font-size: 0.85rem;
   }
   
   .contact {
-    font-size: 0.95rem;
+    font-size: 0.85rem;
   }
 }

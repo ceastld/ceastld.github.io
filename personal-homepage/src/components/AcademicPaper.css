@@ -47,7 +47,7 @@
 }
 
 .paper-title {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   color: #2c3e50;
   margin: 0;
@@ -55,14 +55,14 @@
 }
 
 .paper-authors {
-  font-size: 15px;
+  font-size: 14px;
   color: #555;
   margin: 0;
   font-weight: 400;
 }
 
 .paper-institution {
-  font-size: 15px;
+  font-size: 14px;
   color: #777;
   margin: 0;
   font-weight: 400;
@@ -77,7 +77,7 @@
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .academic-paper {
     flex-direction: column;
     gap: 12px;

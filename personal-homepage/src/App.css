@@ -3,7 +3,7 @@
   padding: 2rem 0 8rem 0; /* 增加底部空白 */
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .container {
     padding: 1rem 0 4rem 0; /* 移动端减少上下边距 */
   }

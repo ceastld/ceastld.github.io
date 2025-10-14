@@ -46,7 +46,7 @@
 }
 
 .project-title {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   color: #2c3e50;
   margin: 0;
@@ -54,7 +54,7 @@
 }
 
 .project-description {
-  font-size: 15px;
+  font-size: 14px;
   color: #555;
   margin: 0;
   font-weight: 400;
@@ -69,17 +69,17 @@
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .project-card {
     flex-direction: column;
     gap: 12px;
     padding: 12px;
   }
-  
+
   .project-image {
     width: 100%;
   }
-  
+
   .project-image .preview-image {
     height: auto;
   }

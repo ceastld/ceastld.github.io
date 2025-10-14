@@ -40,7 +40,7 @@
 }
 
 .experience-institution {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   color: #2c3e50;
   margin: 0;
@@ -48,21 +48,21 @@
 }
 
 .experience-period {
-  font-size: 14px;
+  font-size: 13px;
   color: #666;
   margin: 0;
   font-weight: 500;
 }
 
 .experience-position {
-  font-size: 15px;
+  font-size: 14px;
   color: #555;
   margin: 0;
   font-weight: 400;
   line-height: 1.4;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .experience-item {
     flex-direction: column;
     gap: 15px;
