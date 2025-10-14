@@ -36,12 +36,19 @@
   margin-bottom: 0.25rem;
 }
 
+.button-group {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
 .contact a {
-  color: #2563eb;
+  color: #6c757d;
   text-decoration: none;
 }
 
 .contact a:hover {
+  color: #495057;
   text-decoration: underline;
 }
 

@@ -61,13 +61,13 @@ p {
 }
 
 a {
-  color: #2563eb;
+  color: #6c757d;
   text-decoration: none;
   transition: color 0.2s ease;
 }
 
 a:hover {
-  color: #1d4ed8;
+  color: #495057;
   text-decoration: underline;
 }
 
