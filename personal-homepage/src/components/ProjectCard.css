@@ -68,32 +68,6 @@
   margin-top: 12px;
 }
 
-.project-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-  padding: 4px 8px;
-  background-color: #f8f9fa;
-  border: 1px solid #e9ecef;
-  border-radius: 4px;
-  color: #6c757d;
-  text-decoration: none;
-  font-size: 0.9rem;
-  font-weight: 400;
-  transition: all 0.2s ease;
-}
-
-.project-link:hover {
-  background-color: #e9ecef;
-  border-color: #dee2e6;
-  color: #495057;
-  text-decoration: none;
-}
-
-.project-link-icon {
-  font-size: 0.9em;
-  margin-right: 4px;
-}
 
 @media (max-width: 768px) {
   .project-card {

@@ -1,6 +1,7 @@
 import React from 'react';
 import ImagePreview from './ImagePreview';
 import VideoPreview from './VideoPreview';
+import LinkButton from './LinkButton';
 import './ProjectCard.css';
 
 interface LinkItem {
@@ -41,18 +42,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         {links && links.length > 0 && (
           <div className="project-links">
             {links.map((link, index) => (
-              <a
+              <LinkButton
                 key={index}
-                href={link.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="project-link"
-              >
-                {link.icon && (
-                  <span className="project-link-icon">{link.icon}</span>
-                )}
-                {link.text}
-              </a>
+                text={link.text}
+                url={link.url}
+                icon={link.icon}
+              />
             ))}
           </div>
         )}
