@@ -27,22 +27,22 @@ const AcademicPaper: React.FC<AcademicPaperProps> = ({
       </div>
       <div className="paper-content">
         <h3 className="paper-title">{title}</h3>
-        <p className="paper-authors">{authors}</p>
+        <p className="paper-authors" dangerouslySetInnerHTML={{ __html: authors.replace(/Dongyu Liu/g, '<strong>Dongyu Liu</strong>') }}></p>
         <p className="paper-institution">{institution}</p>
         <div className="paper-links">
           {paper && (
             <a href={paper} target="_blank" rel="noopener noreferrer" className="paper-link">
-              [paper]
+              Paper
             </a>
           )}
           {page && (
             <a href={page} target="_blank" rel="noopener noreferrer" className="paper-link">
-              [page]
+              Webpage
             </a>
           )}
           {code && (
             <a href={code} target="_blank" rel="noopener noreferrer" className="paper-link">
-              [code]
+              Code
             </a>
           )}
         </div>

@@ -1,6 +1,6 @@
 /* App specific styles */
 .container {
-  padding: 2rem 0;
+  padding: 2rem 0 8rem 0; /* 增加底部空白 */
 }
 
 /* Additional styles for the main content */
