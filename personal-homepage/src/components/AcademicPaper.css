@@ -29,6 +29,16 @@
   background-color: #fff;
 }
 
+.paper-image .preview-image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 0.25rem;
+  border: 1px solid #dee2e6;
+  padding: 0.25rem;
+  background-color: #fff;
+}
+
 .paper-content {
   flex: 1;
   display: flex;

@@ -1,4 +1,5 @@
 import React from 'react';
+import ImagePreview from './ImagePreview';
 import './AcademicPaper.css';
 
 interface AcademicPaperProps {
@@ -22,9 +23,9 @@ const AcademicPaper: React.FC<AcademicPaperProps> = ({
 }) => {
   return (
     <div className="academic-paper">
-      <div className="paper-image">
-        <img src={image} alt={title} />
-      </div>
+        <div className="paper-image">
+          <ImagePreview src={image} alt={title} />
+        </div>
       <div className="paper-content">
         <h3 className="paper-title">{title}</h3>
         <p className="paper-authors" dangerouslySetInnerHTML={{ __html: authors.replace(/Dongyu Liu/g, '<strong>Dongyu Liu</strong>') }}></p>
