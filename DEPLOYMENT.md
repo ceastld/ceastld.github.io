@@ -23,12 +23,14 @@
 - 触发条件: 推送到 main 分支
 - 构建命令: `cd personal-homepage && pnpm build`
 - 部署目录: `./personal-homepage/dist`
+- 使用官方 GitHub Pages Actions（更稳定）
 
 ### GitHub Pages 设置
 1. 进入仓库的 Settings 页面
 2. 找到 "Pages" 部分
 3. 设置 Source 为 "GitHub Actions"
 4. 确保仓库是公开的（或你有 Pro 账户）
+5. 确保仓库有 Pages 权限
 
 ## 本地测试部署
 
@@ -56,13 +58,20 @@ pnpm preview
    - 检查 `personal-homepage/package.json` 中的依赖
    - 确保所有 TypeScript 类型错误已修复
 
-2. **部署失败**
-   - 检查 GitHub Actions 日志
-   - 确保仓库有正确的权限设置
+2. **部署失败 - 权限错误**
+   - 确保仓库设置中启用了 Pages
+   - 检查 Actions 权限设置
+   - 确保使用最新的 GitHub Actions（v4）
 
 3. **页面无法访问**
    - 检查 GitHub Pages 设置
    - 确认域名配置正确
+   - 等待几分钟让 DNS 传播
+
+4. **403 权限错误**
+   - 确保仓库是公开的
+   - 检查仓库的 Pages 设置
+   - 确保 Actions 有写入 Pages 的权限
 
 ### 查看部署状态
 
