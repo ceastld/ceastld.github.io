@@ -83,6 +83,25 @@ a:hover {
   margin-bottom: 2rem;
 }
 
+.contact-link {
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 8px;
+  padding: 4px 0;
+  color: #2563eb;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+.contact-link:hover {
+  color: #1d4ed8;
+  border-bottom-color: #2563eb;
+  text-decoration: none;
+}
+
 @media (max-width: 768px) {
   .container {
     padding: 0 15px;

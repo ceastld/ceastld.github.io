@@ -6,6 +6,7 @@ interface ExperienceItemProps {
   institution: string;
   period: string;
   position: string;
+  link?: string;
 }
 
 const ExperienceItem: React.FC<ExperienceItemProps> = ({
@@ -13,8 +14,9 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
   institution,
   period,
   position,
+  link,
 }) => {
-  return (
+  const content = (
     <div className="experience-item">
       <div className="experience-image">
         <img src={image} alt={institution} />
@@ -26,6 +28,16 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
       </div>
     </div>
   );
+
+  if (link) {
+    return (
+      <a href={link} className="experience-link">
+        {content}
+      </a>
+    );
+  }
+
+  return content;
 };
 
 export default ExperienceItem;

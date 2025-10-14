@@ -79,3 +79,14 @@
     height: 100px;
   }
 }
+
+.experience-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.experience-link:hover {
+  text-decoration: none;
+  color: inherit;
+}
