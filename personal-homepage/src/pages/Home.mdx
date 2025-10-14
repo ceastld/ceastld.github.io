@@ -1,6 +1,7 @@
 import AcademicPaper from '../components/AcademicPaper';
 import ExperienceItem from '../components/ExperienceItem';
 import PersonalInfo from '../components/PersonalInfo';
+import ProjectCard from '../components/ProjectCard';
 
 <PersonalInfo
   name="Dongyu Liu"
@@ -93,6 +94,16 @@ import PersonalInfo from '../components/PersonalInfo';
 
 ### 兴趣爱好
 
-- **React** - 前端开发框架
+- **React** - 前端开发
 - **WPF** - Windows桌面应用开发
-  - **BetterClip** - [WPF开发的剪贴板增强工具](/betterclip) | [项目文档](https://betterclip.vercel.app/docs/clip/intro/) | [Quicker动作库](https://getquicker.net/Sharedaction?code=9ec53d43-5539-4571-6886-08d8c752bfcb)
+
+<ProjectCard
+  image="/assets/betterclip/clip.mp4"
+  title="BetterClip - Windows剪贴板增强工具"
+  description="基于WPF开发的Windows剪贴板增强工具，支持自动保存剪贴板内容、智能粘贴、收藏功能等。拥有5w+用户，245个版本更新。"
+  links={[
+    { text: "项目文档", url: "https://betterclip.vercel.app/docs/clip/intro/", icon: "📖" },
+    { text: "Quicker动作库", url: "https://getquicker.net/Sharedaction?code=9ec53d43-5539-4571-6886-08d8c752bfcb", icon: "🔗" }
+  ]}
+/>
+
