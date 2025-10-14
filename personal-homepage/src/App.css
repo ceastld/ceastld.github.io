@@ -3,6 +3,12 @@
   padding: 2rem 0 8rem 0; /* 增加底部空白 */
 }
 
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem 0 4rem 0; /* 移动端减少上下边距 */
+  }
+}
+
 /* Additional styles for the main content */
 .main-content {
   background-color: white;
