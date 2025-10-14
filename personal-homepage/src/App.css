@@ -1,0 +1,13 @@
+/* App specific styles */
+.container {
+  padding: 2rem 0;
+}
+
+/* Additional styles for the main content */
+.main-content {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  margin: 2rem 0;
+}
