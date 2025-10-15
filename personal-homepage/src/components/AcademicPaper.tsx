@@ -11,6 +11,7 @@ interface AcademicPaperProps {
   paper?: string | null;
   page?: string | null;
   code?: string | null;
+  link?: string | null;
 }
 
 const AcademicPaper: React.FC<AcademicPaperProps> = ({
@@ -21,9 +22,23 @@ const AcademicPaper: React.FC<AcademicPaperProps> = ({
   paper = null,
   page = null,
   code = null,
+  link = null,
 }) => {
+  const handleCardClick = () => {
+    if (link) {
+      window.location.href = link;
+    }
+  };
+
+  const handleButtonClick = (e: React.MouseEvent) => {
+    e.stopPropagation();
+  };
+
   return (
-    <div className="academic-paper">
+    <div 
+      className={`academic-paper ${link ? 'clickable' : ''}`}
+      onClick={handleCardClick}
+    >
         <div className="paper-image">
           <ImagePreview src={image} alt={title} />
         </div>
@@ -31,7 +46,7 @@ const AcademicPaper: React.FC<AcademicPaperProps> = ({
         <h3 className="paper-title">{title}</h3>
         <p className="paper-authors" dangerouslySetInnerHTML={{ __html: authors.replace(/Dongyu Liu/g, '<strong>Dongyu Liu</strong>') }}></p>
         <p className="paper-institution">{institution}</p>
-                <div className="paper-links">
+                <div className="paper-links" onClick={handleButtonClick}>
                   {paper && (
                     <LinkButton
                       text="Paper"
