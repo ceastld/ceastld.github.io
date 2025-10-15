@@ -15,7 +15,6 @@ export default defineConfig({
       rehypePlugins: [rehypeKatex],
     }),
   ],
-  base: '/',
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
