@@ -32,7 +32,6 @@ const VideoPreview: React.FC<VideoPreviewProps> = ({ src, className = '' }) => {
               controls
               autoPlay
               loop
-              muted
               playsInline
               className="preview-video-large"
             />

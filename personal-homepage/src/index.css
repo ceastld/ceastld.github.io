@@ -1,3 +1,69 @@
+@import 'katex/dist/katex.min.css';
+
+/* 只对块级数学公式居中显示 */
+.katex-display {
+  text-align: center !important;
+  margin: 1em auto !important;
+  display: block !important;
+  width: 100% !important;
+}
+
+/* 行内数学公式保持原样，不居中 */
+.katex:not(.katex-display) {
+  display: inline;
+  margin: 0;
+  text-align: left;
+}
+
+/* 确保块级数学公式居中 */
+.katex {
+  font-size: 1.1em;
+}
+
+/* 数学公式容器居中 - 只针对块级公式 */
+p:has(.katex-display),
+div:has(.katex-display) {
+  text-align: center !important;
+}
+
+/* 强制块级数学公式块居中 */
+.katex-display,
+.katex-display * {
+  text-align: center !important;
+}
+
+/* 更强制性的块级公式居中 */
+.katex-display {
+  text-align: center !important;
+  margin: 1em auto !important;
+  display: block !important;
+  width: 100% !important;
+}
+
+/* 确保所有块级数学公式都居中 */
+.katex-display {
+  text-align: center !important;
+  margin: 1em auto !important;
+  display: block !important;
+  width: 100% !important;
+}
+
+/* 最强制性的块级公式居中 */
+.katex-display {
+  text-align: center !important;
+  margin: 1em auto !important;
+  display: block !important;
+  width: 100% !important;
+}
+
+/* 针对所有可能的块级数学公式类名 */
+[class*="katex-display"] {
+  text-align: center !important;
+  margin: 1em auto !important;
+  display: block !important;
+  width: 100% !important;
+}
+
 :root {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
@@ -115,4 +181,12 @@ a:hover {
   h3 {
     font-size: 1.2rem;
   }
+}
+
+/* Pinch 演示视频样式 */
+.pinch-demo-video {
+  max-height: 400px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  object-fit: cover;
 }

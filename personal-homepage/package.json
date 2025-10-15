@@ -13,10 +13,13 @@
     "@mdx-js/react": "^3.1.1",
     "@mdx-js/rollup": "^3.1.1",
     "@types/mdx": "^2.0.13",
+    "katex": "^0.16.25",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-router-dom": "^7.9.4",
-    "reactflow": "^11.11.4"
+    "reactflow": "^11.11.4",
+    "rehype-katex": "^7.0.1",
+    "remark-math": "^6.0.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.36.0",

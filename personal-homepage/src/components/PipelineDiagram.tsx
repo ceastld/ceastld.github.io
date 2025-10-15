@@ -142,7 +142,7 @@ const PipelineDiagram: React.FC = () => {
     {
       id: 'latentsync',
       type: 'latentSync',
-      position: { x: 600, y: 300 },
+      position: { x: 600, y: 200 },
       data: { label: 'LatentSync', subtitle: 'Lip Synchronization' },
     },
     
@@ -150,7 +150,7 @@ const PipelineDiagram: React.FC = () => {
     {
       id: 'inverse-affine',
       type: 'videoPipeline',
-      position: { x: 900, y: 300 },
+      position: { x: 900, y: 200 },
       data: { label: 'Inverse Affine Transform' },
     },
     
@@ -164,7 +164,7 @@ const PipelineDiagram: React.FC = () => {
     {
       id: 'output-video',
       type: 'output',
-      position: { x: 1200, y: 300 },
+      position: { x: 1200, y: 200 },
       data: { label: 'Output Video' },
     },
   ], []);
