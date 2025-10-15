@@ -1,0 +1,70 @@
+/* Pipeline Diagram Styles */
+
+.input-node {
+  background: #e3f2fd;
+  border: 2px solid #2196f3;
+  border-radius: 8px;
+  padding: 10px 15px;
+  text-align: center;
+  min-width: 120px;
+  color: #1976d2;
+  font-weight: bold;
+}
+
+.audio-pipeline-node {
+  background: #fff3e0;
+  border: 2px solid #ff9800;
+  border-radius: 8px;
+  padding: 10px 15px;
+  text-align: center;
+  min-width: 120px;
+  color: #f57c00;
+  font-weight: bold;
+}
+
+.video-pipeline-node {
+  background: #f3e5f5;
+  border: 2px solid #9c27b0;
+  border-radius: 8px;
+  padding: 10px 15px;
+  text-align: center;
+  min-width: 120px;
+  color: #7b1fa2;
+  font-weight: bold;
+}
+
+.latent-sync-node {
+  background: #f3e5f5;
+  border: 3px solid #9c27b0;
+  border-radius: 12px;
+  padding: 15px 20px;
+  text-align: center;
+  min-width: 180px;
+  color: #7b1fa2;
+  font-weight: bold;
+  font-size: 16px;
+  box-shadow: 0 4px 8px rgba(156, 39, 176, 0.3);
+}
+
+.output-node {
+  background: #e8f5e8;
+  border: 2px solid #4caf50;
+  border-radius: 8px;
+  padding: 10px 15px;
+  text-align: center;
+  min-width: 120px;
+  color: #2e7d32;
+  font-weight: bold;
+}
+
+.node-subtitle {
+  font-size: 12px;
+  margin-top: 4px;
+  opacity: 0.8;
+}
+
+.pipeline-container {
+  height: 500px;
+  width: 100%;
+  margin: 2rem 0;
+}
