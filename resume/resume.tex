@@ -1,0 +1,118 @@
+\documentclass[11pt,a4paper]{ctexart}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{fontawesome}
+\usepackage{multicol}
+
+% Page setup
+\geometry{margin=0.75in}
+\pagestyle{empty}
+
+% Custom colors
+\definecolor{primarycolor}{RGB}{51, 51, 51}
+\definecolor{secondarycolor}{RGB}{102, 102, 102}
+\definecolor{accentcolor}{RGB}{0, 123, 255}
+
+% Section formatting
+\titleformat{\section}{\large\bfseries\color{primarycolor}}{}{0em}{}[\titlerule]
+\titleformat{\subsection}{\normalsize\bfseries\color{primarycolor}}{}{0em}{}
+\titleformat{\subsubsection}{\small\bfseries\color{secondarycolor}}{}{0em}{}
+
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{\textwidth}[t]{p{0.6\textwidth}@{\extracolsep{\fill}}p{0.3\textwidth}}
+      \textbf{#1} & #2 \\
+      \small#3 & \small #4 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+% Hyperlink setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=accentcolor,
+    urlcolor=accentcolor,
+    citecolor=accentcolor
+}
+
+\begin{document}
+
+% Header
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+    {\Huge \textbf{刘东宇}} & 邮箱: \href{mailto:1950946176@qq.com}{1950946176@qq.com} \\
+    & 个人主页: \href{https://ceastld.github.io}{ceastld.github.io}
+\end{tabular*}
+
+% Personal Statement
+\section{个人简介}
+我是中国科学技术大学(USTC)图形计算与感知交互重点实验室(GCL)的三年级硕士研究生，导师为张举勇教授。我在2023年获得中国科学技术大学数学学士学位，目前正在寻找2026年正式工作的机会。
+
+我在研究生期间，主要研究方向是多模态数字人的建模与驱动，相关内容包括基于FLAME表面嵌入Gaussian的数字人建模，语音到motion的预测。
+
+% Education
+\section{教育经历}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {中国科学技术大学}{安徽合肥}
+      {数学学院 | 计算数学（硕士在读）}{2023.9 -- 至今}
+    \resumeSubheading
+      {中国科学技术大学}{安徽合肥}
+      {少年班学院 | 数学专业（学士学位）}{2019.9 -- 2023.7}
+  \resumeSubHeadingListEnd
+
+% Experience
+\section{实习经历}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Pinch (YC初创公司)}{远程}
+      {AI算法工程师实习生}{2024.12 -- 2025.6}
+      \resumeItemListStart
+        \resumeItem{负责跨语言实时视频会议中的唇形同步技术研发}
+        \resumeItem{探索并实现了两个技术方案：One-shot Gaussian Avatar 和基于 LatentSync 的实时高质量唇形同步}
+        \resumeItem{通过推理流程重构和扩散采样器优化，在单张L40S显卡上实现25-30fps的全流程推理性能}
+        \resumeItem{完整实现了从嘴部区域检测、音频特征提取、唇形同步到原视频对齐的端到端pipeline}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+% Publications
+\section{学术成果}
+\begin{enumerate}[leftmargin=0.15in, label={}, itemsep=-2pt, parsep=0pt]
+\item \textbf{Constructing Diffusion Avatar with Learnable Embeddings}
+\item Xuan Gao, Jingtao Zhou, \textbf{Dongyu Liu}, Yuqi Zhou, Juyong Zhang. In \textit{Proceedings of SIGGRAPH Asia}, 2025. \href{https://ustc3dv.github.io/Learn2Control/}{[Project Page]}
+
+\item \textbf{SwapFrom4D: Realistic Video Head Swapping with 4D Neural Gaussian Field}
+\item Jingtao Zhou, Xuan Gao, \textbf{Dongyu Liu}, Junhui Hou, Yudong Guo, Juyong Zhang. \textit{Under Review}, 2025.
+
+\item \textbf{Multi-Modal Digital Human Modeling, Synthesis, and Driving: A Survey}
+\item Xuan Gao, \textbf{Dongyu Liu}, Juyong Zhang. \textit{Journal of Image and Graphics}, 2023. \href{https://www.cjig.cn/zh/article/doi/10.11834/jig.230649/}{[Paper]}
+\end{enumerate}
+
+
+% Personal Projects
+\section{兴趣爱好}
+
+我个人非常热爱编程，平时会使用React写前端设计网页，熟悉使用WPF开发Windows桌面应用程序，热衷于使用自动化技术来简化各种流程，提高工作效率。
+
+\textbf{BetterClip - Windows剪贴板增强工具} \hfill 2022年 -- 至今
+
+基于WPF开发的Windows剪贴板增强工具，支持自动保存剪贴板内容、各种人性化粘贴方式、收藏贴图功能等。拥有5w+用户，245个版本更新。作为插件发布在Windows自动化工具Quicker的应用库中。
+
+\end{document}
